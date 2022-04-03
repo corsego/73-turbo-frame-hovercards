@@ -1,11 +1,14 @@
 class PeopleController < ApplicationController
-  before_action :set_person, only: %i[ show edit update destroy ]
+  before_action :set_person, only: %i[ show edit update destroy hovercard ]
 
   def index
     @people = Person.all
   end
 
   def show
+  end
+  
+  def hovercard
   end
 
   def new
